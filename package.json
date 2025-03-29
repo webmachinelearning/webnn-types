@@ -1,6 +1,6 @@
 {
     "name": "@webnn/types",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "repository": "webmachinelearning/webnn-types",
     "description": "TypeScript types for WebNN",
     "types": "webnn/index.d.ts",
