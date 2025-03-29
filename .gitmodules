@@ -1,0 +1,6 @@
+[submodule "spec"]
+	path = spec
+	url = https://github.com/webmachinelearning/webnn.git
+[submodule "third_party/bikeshed-to-ts"]
+	path = third_party/bikeshed-to-ts
+	url = https://github.com/toji/bikeshed-to-ts.git

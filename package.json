@@ -1,0 +1,21 @@
+{
+    "name": "@webnn/types",
+    "version": "0.1.0",
+    "repository": "webmachinelearning/webnn-types",
+    "description": "TypeScript types for WebNN",
+    "types": "webnn/index.d.ts",
+    "files": [
+        "webnn/**/*"
+    ],
+    "scripts": {
+        "generate-types": "bikeshed-to-ts --in spec/index.bs --out generated/index.d.ts --forceGlobal --nominal",
+        "fix-types": "node scripts/fix-generated.mjs",
+        "format": "prettier --write generated/index.d.ts",
+        "generate": "npm run generate-types && npm run fix-types && npm run format"
+    },
+    "license": "BSD-3-Clause",
+    "devDependencies": {
+        "bikeshed-to-ts": "file:third_party/bikeshed-to-ts",
+        "prettier": "^3.5.3"
+    }
+}
